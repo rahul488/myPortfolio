@@ -1,0 +1,55 @@
+/* Name animation */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Designation animation */
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.name-container {
+  margin-top: 50px;
+}
+
+/* Animation for name */
+.animated-name {
+  animation: fadeInLeft 2s ease-in-out;
+  color: #4caf50; /* Green color */
+}
+
+/* Animation for designation */
+.animated-designation {
+  animation: fadeInRight 2s ease-in-out;
+  color: #757575; /* Gray color */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-description {
+  animation: fadeInUp 2.5s ease-in-out;
+  color: #9e9e9e; /* Lighter gray for description */
+}

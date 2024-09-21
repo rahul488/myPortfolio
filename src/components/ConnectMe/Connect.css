@@ -1,0 +1,42 @@
+/* Connect.css */
+.connect-header {
+  animation: fadeInDown 1s ease;
+  color: #ffffff; /* White for dark theme */
+  margin-bottom: 30px !important;
+  margin-top: 80px !important;
+}
+
+.connect-icons {
+  display: flex; /* Align icons in a row */
+  justify-content: center; /* Center icons */
+  gap: 20px; /* Space between icons */
+}
+
+.icon-button {
+  color: #ffffff !important; /* White color for icons */
+  transition: transform 0.3s ease;
+
+  border: none; /* Remove default button border */
+}
+
+.icon-button:hover {
+  transform: scale(1.2); /* Scale effect on hover */
+}
+
+/* Keyframes for header animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icon-button:hover {
+  transform: scale(1.2); /* Scale effect on hover */
+  background-color: green !important; /* Light background on hover */
+  border-radius: 50%; /* Circular effect */
+}

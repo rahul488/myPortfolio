@@ -1,0 +1,36 @@
+/* Footer.css */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1e1e1e; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 20px; /* Padding around the content */
+  text-align: center; /* Center text */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.footer-text {
+  font-weight: bold;
+  animation: fadeInUp 1s ease forwards; /* Fade-in effect */
+}
+
+.footer-subtext {
+  margin-top: 10px; /* Space between text */
+  opacity: 0; /* Start hidden for animation */
+  animation: fadeInUp 1s ease forwards; /* Fade-in effect */
+  animation-delay: 0.5s; /* Delay for subtext */
+}
+
+/* Keyframes for footer animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

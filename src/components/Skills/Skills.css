@@ -1,0 +1,63 @@
+/* Skills.css */
+
+.skills-header {
+  animation: fadeInDown 1s ease;
+  color: #ffffff; /* Header color */
+  margin: 30px 0 !important; /* Space below the header */
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-item {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2); /* Light shadow for visibility */
+}
+
+.skill-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.icon-box {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.icon-box:hover {
+  transform: rotate(360deg);
+}
+
+/* Change the icon color */
+.skill-name {
+  margin-top: 15px;
+  color: #ffffff; /* White color for the skill name */
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.skill-item:hover .skill-name {
+  color: #4caf50; /* Change color on hover for visibility */
+}
+
+/* Add styles for icons to match dark theme */
+.icon {
+  color: #ffffff; /* Icon color */
+  transition: color 0.3s ease;
+}
+
+.skill-item:hover .icon {
+  color: #4caf50; /* Change icon color on hover */
+}

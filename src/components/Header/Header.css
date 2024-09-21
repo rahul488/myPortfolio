@@ -1,0 +1,23 @@
+.name-text {
+  /* Add space between letters */
+  letter-spacing: 10px !important;
+  animation: colorChange 2s infinite; /* Animation effect */
+  color: green; /* Default color */
+  font-size: 1.5rem;
+}
+
+/* Keyframes for the animation */
+@keyframes colorChange {
+  0% {
+    transform: translateY(0px);
+    color: green;
+  }
+  50% {
+    transform: translateY(-10px);
+    color: limegreen;
+  }
+  100% {
+    transform: translateY(0px);
+    color: green;
+  }
+}

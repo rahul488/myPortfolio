@@ -1,0 +1,89 @@
+/* Experience.css */
+
+.experience-header {
+  animation: fadeInDown 1s ease;
+  color: #ffffff; /* Header color */
+  margin: 30px 0 !important; /* Space below the header */
+}
+
+.company-logo {
+  width: 100%; /* Make the logo responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 80px; /* Limit the height for uniformity */
+  object-fit: cover !important; /* Ensure the image is contained within the box */
+  margin-bottom: 10px; /* Space below the logo */
+}
+
+/* Flex properties for equal height */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards; /* Fade in upwards */
+}
+
+.fade-in:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.fade-in:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+/* Keyframes for header animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for experience item animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience-item {
+  display: flex; /* Makes the inner content flexible */
+  flex-direction: column; /* Aligns content vertically */
+  justify-content: space-between; /* Ensures spacing between items */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  height: 100%; /* Allow item to take full height of the grid */
+}
+
+.experience-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.company-name {
+  font-weight: bold;
+  color: #4caf50; /* Green color for company name */
+}
+
+.duration,
+.designation,
+.work-description,
+.tech-stack {
+  color: #ffffff; /* White color for other texts */
+}
