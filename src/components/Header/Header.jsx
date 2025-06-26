@@ -58,7 +58,7 @@ function Header() {
       <Dialog open={open} onClose={handleClose} maxWidth="sm" fullWidth>
         <DialogContent sx={{ display: "flex", justifyContent: "center" }}>
           <img
-            src="/rd15.jpg" // Path to your full image
+            src="/file_000000005f9462468e5461ce0c8c9cc6.png" // Path to your full image
             alt="Full Avatar"
             style={{
               borderRadius: "50%", // Circular image
