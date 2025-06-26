@@ -43,7 +43,7 @@ function Header() {
                 <Avatar
                   alt="Remy Sharp"
                   sx={{ width: 56, height: 56 }}
-                  src="/rd15.jpg"
+                  src="/file_000000005f9462468e5461ce0c8c9cc6.png"
                 />
               </IconButton>
               <Typography variant="h5" color={"success"} className="name-text">
